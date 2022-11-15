@@ -3,6 +3,7 @@
   "displayName": "Impulse",
   "description": "Impulse is a productivity tool for Near protocol developers",
   "publisher": "Carlos Mucuho",
+  "icon": "https://github.com/CSFM93/impulse/blob/main/extensionAssets/images/impulse-yellow.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.72.0"
