@@ -1,10 +1,13 @@
 {
-  "name": "impulse",
+  "name": "impulse-csfm1993",
   "displayName": "Impulse",
   "description": "Impulse is a productivity tool for Near protocol developers",
-  "publisher": "Carlos Mucuho",
-  "icon": "https://github.com/CSFM93/impulse/blob/main/extensionAssets/images/impulse-yellow.png",
+  "publisher": "CarlosMucuho",
+  "icon": "extensionAssets/images/impulse-yellow.png",
   "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/CSFM93/impulse"
+  },
   "engines": {
     "vscode": "^1.72.0"
   },
@@ -206,7 +209,7 @@
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
-    "package":"vsce package --baseImagesUrl https://raw.githubusercontent.com/llvm/llvm-project/master/clang-tools-extra/clangd/clients/clangd-vscode/"
+    "package": "vsce package --baseImagesUrl https://raw.githubusercontent.com/llvm/llvm-project/master/clang-tools-extra/clangd/clients/clangd-vscode/"
   },
   "devDependencies": {
     "@types/glob": "^8.0.0",

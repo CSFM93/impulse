@@ -8,19 +8,19 @@ async function getContractsDirectories() {
     const projects = await vscode.workspace.findFiles("**/package.json", "**/node_modules/**");
     let allContracts = [];
     try {
-        projects.map(async (unknownContract) => {
-            let contractSubDirPath = unknownContract.fsPath.replace("package.json", "contract");
+        projects.map(async (project) => {
+            let contractSubDirPath = project.fsPath.replace("package.json", "contract");
             let dirExists = (0, fileManager_1.checkIfDirExists)(contractSubDirPath);
             if (dirExists) {
                 let files = (0, fileManager_1.listFiles)(contractSubDirPath);
                 if (files !== undefined && files.length > 0) {
                     // console.log("found: ", files);
                     if (files.includes("Cargo.toml")) {
-                        let mainPackageFileText = (0, fileManager_1.getText)(unknownContract.fsPath);
+                        let mainPackageFileText = (0, fileManager_1.getText)(project.fsPath);
                         let contract = {
                             name: mainPackageFileText.name,
                             language: "Rust",
-                            manifestPath: unknownContract.fsPath,
+                            manifestPath: project.fsPath,
                         };
                         allContracts.push(contract);
                     }
@@ -28,7 +28,7 @@ async function getContractsDirectories() {
                         if (files.includes("package.json")) {
                             let packageFilePath = path.join(contractSubDirPath, "package.json");
                             let packageFileText = (0, fileManager_1.getText)(packageFilePath);
-                            let contract = checkIfContractIsJSorAS(packageFileText, unknownContract.fsPath);
+                            let contract = checkIfContractIsJSorAS(packageFileText, project.fsPath);
                             if (contract !== undefined) {
                                 allContracts.push(contract);
                             }
