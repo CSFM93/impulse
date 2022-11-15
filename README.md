@@ -26,9 +26,9 @@ Impulse is a Visual Studio Code Extension that boosts Near Protocol developers' 
 - Multi project support
 
 
-### Creating a Near project
+**Creating a Near project**
 
-Creating a new project using `npx`
+**Creating a new project using `npx`**
 
 ![](./extensionAssets/gifs/create-new.gif)
 
@@ -38,68 +38,65 @@ Cloning an existing Repository
 ![](./extensionAssets/gifs/clone-repo.gif)
 
 
-### Running Test scripts
+**Running Test scripts**
 
 ![](./extensionAssets/gifs/test.gif)
 
 
-### Running Build scripts
+**Running Build scripts**
 
 ![](./extensionAssets/gifs/build.gif)
 
 
-### Deploying smart contracts
+**Deploying smart contracts**
 
 ![](./extensionAssets/gifs/deploy.gif)
 
 
-### Calling smart contracts
+**Calling smart contracts**
 
-Calling view methods
+**Calling view methods**
 
 ![](./extensionAssets/gifs/call-view.gif)
 
 
-Calling change methods
+**Calling change methods**
 
 ![](./extensionAssets/gifs/call-change.gif)
 
 
 > Note: To call smart contracts you should create in your project's root directory a file named `impulse.json`, and inside it declare your view and change methods. For more information on how to declare the methods please read the impulse.json.md file.
 
-### Account Management
+**Account Management**
 
-Creating account
+**Creating account**
 
 ![](./extensionAssets/gifs/account-create.gif)
 
 
-Getting account state
+**Getting account state**
 
 ![](./extensionAssets/gifs/account-get-state.gif)
 
 
-Sending tokens
+**Sending tokens**
 
 ![](./extensionAssets/gifs/account-send.gif)
 
 
-Deleting account
+**Deleting account**
 
 ![](./extensionAssets/gifs/account-delete.gif)
 
 
-### Multi network support
+**Multi network support**
 
 ![](./extensionAssets/gifs/selectNetwork.gif)
 
 
-### Multi project support
+**Multi project support**
 
 ![](./extensionAssets/gifs/selectAccount.gif)
-
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
 
 

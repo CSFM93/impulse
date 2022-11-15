@@ -1,7 +1,7 @@
 {
   "name": "impulse",
-  "displayName": "impulse",
-  "description": "",
+  "displayName": "Impulse",
+  "description": "Impulse is a productivity tool for Near protocol developers",
   "publisher": "Carlos Mucuho",
   "version": "0.0.1",
   "engines": {
