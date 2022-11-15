@@ -1,0 +1,223 @@
+{
+  "name": "impulse",
+  "displayName": "impulse",
+  "description": "",
+  "publisher": "Carlos Mucuho",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onView:impulse.mainCommandsView",
+    "onView:impulse.activitybarView",
+    "onCommand:impulse.test",
+    "onCommand:impulse.compile",
+    "onCommand:impulse.deploy",
+    "onCommand:impulse.call",
+    "onCommand:impulse.selectNetwork",
+    "onCommand:impulse.selectAccount",
+    "onCommand:impulse.accountManager"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "impulse.mainCommandsView",
+          "name": "Impulse"
+        }
+      ],
+      "impulseActivitybarContainer": [
+        {
+          "id": "impulse.activitybarView",
+          "name": "Impulse"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "impulseActivitybarContainer",
+          "title": "Impulse",
+          "icon": "resources/impulse.svg"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "impulse.activitybarView",
+        "contents": "In order to use impulse features, you can create a new Near project, or open a folder containing a Near project or clone from a URL..\n[Create a new project](command:impulse.createProject)\n[Open Folder](command:vscode.openFolder)\n[Clone Repository](command:git.clone)\nTo learn more about how to use Impulse in VS Code [read our page](https://aka.ms/vscode-scm).",
+        "when": "impulse.showWelcomePage == true"
+      }
+    ],
+    "commands": [
+      {
+        "command": "impulse.createProject",
+        "category": "Impulse",
+        "title": "Create project"
+      },
+      {
+        "command": "impulse.test",
+        "category": "Impulse",
+        "title": "Test"
+      },
+      {
+        "command": "impulse.compile",
+        "category": "Impulse",
+        "title": "Compile"
+      },
+      {
+        "command": "impulse.deploy",
+        "category": "Impulse",
+        "title": "Deploy"
+      },
+      {
+        "command": "impulse.call",
+        "category": "Impulse",
+        "title": "Call"
+      },
+      {
+        "command": "impulse.selectNetwork",
+        "category": "Impulse",
+        "title": "Select network",
+        "icon": "$(settings-gear)"
+      },
+      {
+        "command": "impulse.selectAccount",
+        "category": "Impulse",
+        "title": "Select Account",
+        "icon": "$(accounts-view-bar-icon)"
+      },
+      {
+        "command": "impulse.accountManager",
+        "category": "Impulse",
+        "title": "Account Manager"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "impulse.selectAccount",
+          "group": "navigation",
+          "when": "view == impulse.mainCommandsView"
+        },
+        {
+          "command": "impulse.selectNetwork",
+          "group": "navigation",
+          "when": "view == impulse.mainCommandsView"
+        }
+      ]
+    },
+    "configuration": [
+      {
+        "title": "Localnet",
+        "properties": {
+          "impulse.localnet.nearEnv": {
+            "type": "string",
+            "default": "local",
+            "description": "Used to set the Near localnet Near environment"
+          },
+          "impulse.localnet.nearCLILocalnetNetworkId": {
+            "type": "string",
+            "default": "localnet",
+            "description": "Used to set the Near localnet network id"
+          },
+          "impulse.localnet.nearNodeURL": {
+            "type": "string",
+            "default": "http://127.0.0.1:8332",
+            "description": "Used to set the Near localnet node URL"
+          },
+          "impulse.localnet.nearCLILocalnetKeyPath": {
+            "type": "string",
+            "default": "/csfm1993/.neartosis/2022-10-25T22.11.11/validator-key.json",
+            "description": "Used to set the Near localnet validator key path"
+          },
+          "impulse.localnet.nearWalletURL": {
+            "type": "string",
+            "default": "http://127.0.0.1:8334",
+            "description": "Used to set the Near localnet wallet URL"
+          },
+          "impulse.localnet.nearHelperURL": {
+            "type": "string",
+            "default": "http://127.0.0.1:8330",
+            "description": "Used to set the Near localnet helper URL"
+          },
+          "impulse.localnet.nearHelperAccount": {
+            "type": "string",
+            "default": "test.near",
+            "description": "Used to set the Near localnet helper account"
+          },
+          "impulse.localnet.nearExplorerURL": {
+            "type": "string",
+            "default": "http://127.0.0.1:8331",
+            "description": "Used to set the Near localnet explorer URL"
+          }
+        }
+      },
+      {
+        "title": "Testnet",
+        "properties": {
+          "impulse.testnet.nearEnv": {
+            "type": "string",
+            "default": "testnet",
+            "description": "Used to set the Near testnet environment"
+          },
+          "impulse.testnet.nearCLITestnetRPCServerURL": {
+            "type": "string",
+            "default": "https://rpc.testnet.near.org",
+            "description": "Used to set the Near testnet RPC server URL"
+          },
+          "impulse.testnet.nearWalletURL": {
+            "type": "string",
+            "default": "https://wallet.testnet.near.org",
+            "description": "Used to set the Near testnet wallet URL"
+          },
+          "impulse.testnet.nearHelperURL": {
+            "type": "string",
+            "default": "https://helper.testnet.near.org",
+            "description": "Used to set the Near testnet helper URL"
+          },
+          "impulse.testnet.nearHelperAccount": {
+            "type": "string",
+            "default": "testnet",
+            "description": "Used to set the Near testnet helper account"
+          },
+          "impulse.testnet.nearExplorerURL": {
+            "type": "string",
+            "default": "https://explorer.testnet.near.org",
+            "description": "Used to set the Near testnet explorer URL"
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package":"vsce package --baseImagesUrl https://raw.githubusercontent.com/llvm/llvm-project/master/clang-tools-extra/clangd/clients/clangd-vscode/"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.72.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "@vscode/test-electron": "^2.1.5",
+    "eslint": "^8.24.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.8.4"
+  }
+}

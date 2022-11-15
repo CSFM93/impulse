@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1000" height="1000" viewBox="0 0 1000 1000" xml:space="preserve">
+<desc>Created with Fabric.js 3.5.0</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="rgba(255,255,255,0)"/>
+<g transform="matrix(1.2346 0 0 1.2346 500.0173 500.0173)" id="953607">
+<g style="" vector-effect="non-scaling-stroke">
+		<g transform="matrix(1 0 0 1 0.03 0)" id="Layer_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: #000000; fill-rule: nonzero; opacity: 1;" transform=" translate(-540.03, -540)" d="M 832.1 608.72 c -31 132.61 -150 231.36 -292.1 231.36 c -141.66 0 -260.4 -98.15 -291.89 -230.16 l -34 -2.81 c 31.11 151.43 165.39 265.6 325.9 265.6 c 160.78 0 295.33 -114.59 326.14 -266.44 Z M 540 207.29 c -183.49 0 -332.71 149.22 -332.71 332.71 q 0 8.65 0.45 17.18 l 32.51 -3.08 c -0.21 -4.66 -0.33 -9.35 -0.33 -14.07 c 0 -165.74 134.37 -300.11 300.08 -300.11 a 299.22 299.22 0 0 1 100.37 17.21 c 4.24 1.49 8.42 3.08 12.57 4.81 c 1.47 0.57 3 1.2 4.43 1.79 c 4.21 1.83 8.39 3.71 12.52 5.68 C 770.55 317.88 840 420.84 840 540 c 0 5.08 -0.12 10.16 -0.39 15.18 L 872.26 558 c 0.36 -6 0.51 -11.92 0.51 -18 C 872.77 356.51 723.49 207.29 540 207.29 Z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 115.155 -277.165)" id="Layer_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: #000000; fill-rule: nonzero; opacity: 1;" transform=" translate(-655.155, -262.835)" d="M 657.37 263.73 c -1.47 -0.59 -3 -1.22 -4.43 -1.79 A 8.74 8.74 0 0 1 657.37 263.73 Z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 0 0)" id="Layer_1">
+<polygon style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: #000000; fill-rule: nonzero; opacity: 1;" points="408.04,42.34 329.27,48.05 295.78,50.5 129.14,62.57 100.99,-90.3 -21.6,269.15 -112.94,-55.19 -162.63,62.57 -295.66,51.6 -329.12,48.85 -408.04,42.34 -330.86,35.05 -298.38,31.97 -194.73,22.17 -100.57,-183.76 -17.09,110.43 111.93,-269.15 168.97,22.17 298.2,33.08 330.83,35.83 408.04,42.34 "/>
+</g>
+</g>
+</g>
+</svg>
