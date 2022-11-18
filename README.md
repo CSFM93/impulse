@@ -65,7 +65,7 @@ Cloning an existing Repository
 ![](./extensionAssets/gifs/call-change.gif)
 
 
-> Note: To call smart contracts you should create in your project's root directory a file named `impulse.json`, and inside it declare your view and change methods. For more information on how to declare the methods please read the impulse.json.md file.
+> Note: To call smart contracts you should create in your project's root directory a file named `impulse.json`, and inside it declare your view and change methods. For more information on how to declare the methods please read this [document](https://github.com/CSFM93/impulse/blob/main/impulse.json.md).
 
 **Account Management**
 
