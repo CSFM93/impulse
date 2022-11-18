@@ -5,6 +5,7 @@ There are two ways you can run this extension:
 - Cloning the repository and running the extension in development mode.
 
 
+
 ## Installing the extension published in the marketplace
 
 Open VS Code, click on "Extensions" and search for an extension named `impulse` published by Carlos Mucuho. Click on on install and you are all set.
